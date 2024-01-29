@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+}
+body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0a1 100%);
+    min-height: 100vh;
+    display: flex;
+    
+    }
+    .sidebar {
+        width: 15%;
+        min-height: 100vh;
+        background-color: gold;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 8px;
+        position: relative;
+        transition: 0.3s;
+        overflow: hidden;
+        
+    }
+   
+       
+
+ 
+    .sidebar ul li{
+        
+        padding-bottom: 5px;
+        list-style-type: none;
+    }
+    .sidebar ul li a {
+        
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+        display: flex;
+        gap: 30px;
+        padding: 15px;
+        align-items: center;
+       border-radius: 10px;
+       text-decoration: none;
+       transition: 0.5s ease;
+       
+    }
+    .sidebar ul li a i {
+        font-size: 20px;
+    }
+    .sidebar ul li a p {
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: capitalize;
+
+
+    }
+    .sidebar .logout {
+        position: absolute;
+        bottom: 0;
+        width: 95%;
+        
+    }
+    .sidebar ul li a:hover,.activehouse{
+        background-color: #ffffffcc;
+    }
+    .content {
+        width: 85%;
+      
+        display: flex;
+        
+      
+        flex-direction: column;
+    }
+    .content .sectionone{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: fit-content;
+        padding: 20px 100px;
+        margin: 10px 15px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       position: relative;
+}
+.content .sectionone p{
+    font-size: 25px;
+    font-weight: 700;
+    text-shadow: 01px 01px 3px rgb(255, 255, 255);
+    
+   
+}
+.content .sectionone form input {
+   outline: 0;
+    padding: 5px;
+    color: black;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 200px;
+    
+    
+}
+.content .sectionone form i{
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    margin-right: 25px;
+    font-size: larger;
+    
+}
+.sectiontwo {
+    margin-bottom: 100px;
+}
+.content .sectiontwo {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: fit-content;
+    padding: 30px 50px;
+    margin: 10px 15px;
+    border-radius: 8px;
+   
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sectiontwo .para {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight:700;
+    text-shadow: 01px 01px 3px rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.sectiontwo .container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sectiontwo .container .box {
+    width: 200px;
+    height: 200px;
+    background-color:  rgba(224, 214, 117, 0.212);
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+.sectiontwo .container .box:hover {
+    scale: 1.02;
+    cursor: pointer;
+}
+.sectiontwo .container .box p {
+    font-size: 15px;
+    line-height: 20px;
+
+}
+.sectiontwo .container .box h3 {
+    font-size: 30px;
+}
+.sectiontwo .container .box .sideicon i{
+    font-size: 50px ;
+    color: gold;
+    text-shadow: 01px 01px 3px rgb(0, 0, 0);
+}
+.sectionthree  {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: fit-content;
+    padding: 30px 50px;
+    margin: 10px 15px;
+    border-radius: 8px;
+  
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .sectionthree  p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight:700;
+    text-shadow: 01px 01px 3px rgb(255, 255, 255);
+    letter-spacing: px;
+    margin-bottom: 15px;
+  }
+  .sectionthree .container2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sectionthree .container2 table {
+    border-spacing: 0;
+    flex-wrap: wrap;
+    
+  
+    
+
+  }
+  .sectionthree .container2 table th {
+    text-transform: capitalize;
+    background-color: gold;
+    font-size: 18px;
+    padding: 10px;
+   
+  }
+  .sectionthree .container2 table td{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(233, 231, 220);
+    text-transform: capitalize;
+    
+  }
+  .sectionthree .container2 table tfoot td {
+    text-transform: capitalize;
+    background-color: gold;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+   
+  }
+ @media (max-width:700px) {
+    body {
+        overflow-x: hidden;
+    }
+    .sidebar ul li a p {
+        display: none;
+    }
+    .sidebar ul li a:hover,.activehouse{
+        background-color:transparent;
+    }
+    .sectionone {
+        flex-direction: column;
+        
+
+    }
+    .content .sectionone{
+        margin: 10px 2px;
+
+    }
+    .content .sectiontwo{
+        margin: 10px 2px;
+
+    }
+    .content .sectionthree{
+        margin: 10px 2px;
+        overflow: hidden;
+
+    }
+  
+    .sectionthree {
+        padding: 5px 5px;
+    }  
+    
+    .sectionthree .container2 table th{
+        font-size: 12px;
+        padding: 2px;
+        margin-right: 10px;
+    }
+    .sectionthree .container2 table td{
+        font-size: 12px;
+        padding: 3px;
+    }
+    .sectionthree .container2 table tfoot td{
+        font-size: 12px;
+        padding: 2px;
+    }
+    .sectionthree .container2 table .none {
+        display: none;
+    }
+   
+ }
+ @media (min-width:700px) and (max-width:1160px) {
+   body{overflow-x: hidden;} 
+    .sidebar ul li a p {
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .sidebar ul li a {
+        gap: 15px;
+    }
+    
+ }
